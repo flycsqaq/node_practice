@@ -1,0 +1,26 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "object-curly-spacing": 2,
+    "no-console": 2,
+    "no-dupe-keys": 2,
+    "no-empty": 2,
+    "eqeqeq": 2,
+    "no-with": 2,
+    "vars-on-top": 2,
+    "linebreak-style": 2,
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+  }
+}
