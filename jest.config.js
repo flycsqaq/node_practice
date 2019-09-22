@@ -1,3 +1,6 @@
 /** @format */
 
-module.exports = {};
+module.exports = {
+    verbose: true,
+    moduleFileExtensions: ['ts', 'js'],
+};

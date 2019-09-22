@@ -11,3 +11,5 @@ node自动重启工具,需要ts-node
 代码格式化工具
 
 ## mysql
+
+## jest

@@ -2,6 +2,7 @@
 
 import express from 'express';
 import mysql from 'mysql';
+import session from 'express-session';
 
 const connection = mysql.createConnection({
     host: '47.107.147.152',
@@ -22,14 +23,10 @@ connection.query('SELECT 1 + 1 AS solution', function(error, results) {
 
 const app = express();
 
-app.get('/', function(_, res) {
-    res.send('Hello, world');
-});
+app.use(session({}));
 
-app.listen(3000, function() {
-    /* eslint-disable */
-    console.log('app is listening at port 3000');
-    /* eslint-disable */
+app.get('/api', function(_, res) {
+    res.send('Hello, world');
 });
 
 export default app;
